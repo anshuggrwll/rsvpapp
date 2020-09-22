@@ -30,7 +30,7 @@ environment {
 stages {
   stage('Build') {
     environment {
-      DOCKERHUB_CREDS = credentials('Dockerhub')
+      DOCKERHUB_CREDS = credentials('dockerhub')
     }
     steps {
       container('docker') {
